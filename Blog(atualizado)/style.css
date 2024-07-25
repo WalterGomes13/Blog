@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+html{
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  
+  header{
+    color: white;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(3, 3, 26);
+  }
+  
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  h1{
+    font-family: "Archivo", sans-serif;
+  }
+
+  label{
+    font-family: "Archivo", sans-serif;
+  }
+
+#subtitle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: left;
+  margin-left: 150px;
+}
+
+#posts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#postSpan{
+  font-family: "Archivo", sans-serif;
+}
+
+h2{
+  font-family: "Archivo", sans-serif;
+  margin: 0px;
+}
+
+ul{
+  list-style-type: none;
+  gap: 5px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#btnCtd{
+  display: flex;
+  max-width: 450px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  gap: 10px;
+}
+
+#linhaCorpo{
+  word-break: break-all;
+}
+
+#btnCtd:hover {
+  background-color: rgb(193, 184, 184);
+}
+
+img{
+  width: 30%;
+  height: 40%;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+#h2Titulo{
+  margin-top: 20px;
+}
+
+p{
+  font-family: "Archivo", sans-serif;
+  margin-top: 16px;
+}
+
+input{
+  width: 250px;
+  background-color: white;
+  border-top: none ;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(7, 7, 40);
+}
+
+#corpo{
+  height: 60px;
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Archivo", sans-serif;
+}
+
+#botao{
+  font-size: 20px;
+  font-family: "Archivo", sans-serif;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(34, 34, 50);
+  padding: 10px;
+}
+
+#jnlModal{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: animate;
+  animation-duration: 800ms;
+  gap: 0px;
+}
+
+@keyframes animate{
+  from{opacity: 1;}
+  from{opacity: 0;}
+}
+
+#jnlModal img{
+  margin: 0px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  border: none;
+}
+
+#fechar{
+  font-size: 20px;
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(3, 3, 26);
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+}
+
+
+#fechar:hover{
+  background-color: rgb(22, 22, 30);;
+}
+
+#date{
+  font-family: "Archivo", sans-serif;
+  color: rgb(131, 126, 126);
+}
+
+#dateBox{
+  font-family: "Archivo", sans-serif;
+  margin: 0px;
+  color: rgb(131, 126, 126);
+}
+
+#inputCmt{
+  background-color: white;
+  border-top: none ;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(7, 7, 40);
+}
+
+#cmt{
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  gap: 5px;
+}
+
+#addCmt{
+  font-family: "Archivo", sans-serif;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(10, 10, 43);
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+
